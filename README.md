@@ -9,29 +9,37 @@ Minimalist personal portfolio website for Demetrios Gavalas, highlighting experi
 
 ## Features
 
-- **Minimalist, High-Performance Design**: Clean typography semantic HTML5, zero external dependencies, responsive on all screen sizes.
+- **Minimalist, High-Performance Design**: Clean typography, semantic HTML5, zero external dependencies, responsive on all screen sizes.
 - **Dark / Light Mode**: System theme detection with toggle and `localStorage` persistence.
-- **Print / PDF Optimized**: Integrated `@media print` styling for clean, executive resume/CV printing via the print button (`Ctrl + P`).
+- **Print / PDF Optimized**: Integrated `@media print` styling for clean, executive resume/CV printing (`Ctrl + P`).
 - **1-Click Copy**: Quick-copy email button with visual confirmation.
-- **Dual Deployment Ready**:
-  - Direct static files at root (`index.html`, `style.css`, `script.js`) for instant GitHub Pages / static hosting without build steps.
-  - Zola SSG setup inside [`zola/`](zola/) with templates and assets pre-configured.
+- **Built with Zola**: Fast static site generation designed for seamless deployment on Cloudflare Pages, GitHub Pages, or Vercel.
 
 ---
 
 ## Local Development & Preview
 
-### Option 1: Direct Static Preview (No installation required)
-Simply open [`index.html`](index.html) directly in any web browser, or run a local Python server:
-```bash
-python -m http.server 8000
-```
-Then navigate to `http://localhost:8000`.
+Run the Zola development server from the repository root:
 
-### Option 2: Using Zola
-If you have [Zola](https://www.getzola.org/) installed:
 ```bash
-cd zola
 zola serve
 ```
-Then open `http://127.0.0.1:1111` in your browser.
+
+Then navigate to `http://127.0.0.1:1111` in your browser.
+
+To build the static site:
+
+```bash
+zola build
+```
+
+The output will be placed in the `public/` directory.
+
+---
+
+## Deployment (Cloudflare Pages)
+
+- **Framework preset**: Zola
+- **Build command**: `zola build`
+- **Build output directory**: `public`
+- **Root directory**: `/` (repository root)
