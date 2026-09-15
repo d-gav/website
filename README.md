@@ -9,7 +9,7 @@ Minimalist personal portfolio website for Demetrios Gavalas, highlighting experi
 
 ## Features
 
-- **Minimalist, High-Performance Design**: Clean typography, semantic HTML5, zero external dependencies, responsive on all screen sizes.
+- **Minimalist, High-Performance Design**: Clean typography semantic HTML5, zero external dependencies, responsive on all screen sizes.
 - **Dark / Light Mode**: System theme detection with toggle and `localStorage` persistence.
 - **Print / PDF Optimized**: Integrated `@media print` styling for clean, executive resume/CV printing via the print button (`Ctrl + P`).
 - **1-Click Copy**: Quick-copy email button with visual confirmation.
