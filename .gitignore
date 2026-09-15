@@ -1,0 +1,15 @@
+# Resume PDF
+resume (asic).pdf
+*.pdf
+
+# Build and output directories
+out/
+public/
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/

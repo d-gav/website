@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demetrios Gavalas</title>
+  <meta name="description" content="Demetrios Gavalas — Electrical & Computer Engineering at Cornell University. Custom silicon tapeouts, ASIC physical design, and FPGA acceleration.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Demetrios Gavalas">
+  <meta property="og:description" content="Electrical & Computer Engineering @ Cornell University. ASIC physical design, custom silicon, FPGA acceleration.">
+  <meta property="og:url" content="https://demetri.nyc">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function() {
+      const s = localStorage.getItem('theme');
+      const d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (s === 'dark' || (!s && d)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <h1 class="title">Demetrios Gavalas</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">[theme]</button>
+      </div>
+      <p class="subtitle">Cornell University &bull; B.S. &amp; M.Eng. in Electrical &amp; Computer Engineering ('27)</p>
+      <p class="bio">
+        Physical design lead and hardware engineer focusing on custom silicon tapeouts, ASIC physical design flows, and FPGA acceleration.
+      </p>
+
+      <div class="contact-links">
+        <button id="copy-email" class="copy-btn">deg273@cornell.edu</button><span id="copy-notice" class="copy-notice">copied</span>
+        <span class="contact-sep">&bull;</span>
+        <a href="https://github.com/d-gav" target="_blank" rel="noopener noreferrer">github<span class="ext-arrow">&nearr;</span></a>
+        <span class="contact-sep">&bull;</span>
+        <a href="https://demetri.nyc">demetri.nyc</a>
+        <span class="contact-sep">&bull;</span>
+        <a href="tel:6469200622">(646) 920-0622</a>
+        <span class="contact-sep">&bull;</span>
+        <span>Ithaca &amp; New York, NY</span>
+      </div>
+    </header>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-label">Experience</h2>
+
+      <div class="entry-list">
+
+        <!-- Citadel Securities -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Citadel Securities</h3>
+            <span class="entry-meta">June 2026 – Aug. 2026 &bull; New York, NY</span>
+          </div>
+          <div class="entry-role">Hardware Engineer Intern</div>
+          <ul class="entry-bullets">
+            <li>Developed RTL features for an FPGA image in SystemVerilog, including custom Ethernet PCS IP.</li>
+            <li>Executed physical layer bring-up and characterization for low-latency transceivers.</li>
+            <li>Wrote Python client code and framework to drive register configuration and packet streaming for FPGA image.</li>
+          </ul>
+        </article>
+
+        <!-- C2S2 -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              Cornell Custom Silicon Systems (C2S2)
+              <a href="https://www.c2s2.dev/chip-gallery" target="_blank" rel="noopener noreferrer" class="entry-link-chip">chip gallery<span class="ext-arrow">&nearr;</span></a>
+            </h3>
+            <span class="entry-meta">Oct. 2023 – Present &bull; Ithaca, NY</span>
+          </div>
+          <div class="entry-role">Physical Design Lead</div>
+          <ul class="entry-bullets">
+            <li>Developed ASIC flow for a mixed-signal tapeout including SRAM using Synopsys DC, Cadence Innovus, and Siemens Calibre.</li>
+            <li>Designed and prototyped RTL digital logic in Verilog and SystemVerilog to tape-out an ASIC for bird tagging.</li>
+            <li>Managed tapeout logistics including coordinating I/O and packaging for several tapeouts and post-silicon test planning.</li>
+            <li>Led effort to formally verify existing IP using Formal Verification tools, and tested silicon chip in hardware.</li>
+            <li>Verified RTL blocks using CocoTB and PyMTL test benches and testing against software models of RTL blocks.</li>
+            <li>Used Vivado to simulate ASIC design behavior on an FPGA for rigorous pre-tapeout testing.</li>
+          </ul>
+        </article>
+
+        <!-- M3 Research Group -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">M3 Research Group</h3>
+            <span class="entry-meta">Aug. 2025 – Present &bull; Ithaca, NY</span>
+          </div>
+          <div class="entry-role">Student Researcher &bull; Advised by Prof. José Martínez</div>
+          <ul class="entry-bullets">
+            <li>Designed and simulated a 6T Content-Addressable Memory bit cell and column using Cadence Virtuoso.</li>
+            <li>Coordinated with a partner to partition and execute the custom layout of an SRAM-based CAM array and peripherals.</li>
+            <li>Performed rigorous physical verification (DRC/LVS) and post-layout parasitic simulations to validate the design.</li>
+            <li>Independently evaluated a novel compute-in-memory architecture under the advisement of Professor José Martínez.</li>
+          </ul>
+        </article>
+
+        <!-- NASA JPL -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">NASA Jet Propulsion Laboratory</h3>
+            <span class="entry-meta">May 2025 – Aug. 2025 &bull; Pasadena, CA</span>
+          </div>
+          <div class="entry-role">Hardware Engineer Intern</div>
+          <ul class="entry-bullets">
+            <li>Analyzed timing of post-PNR FPGA designs and characterized delay for different levels of radiation exposure tolerance.</li>
+            <li>Collaborated with engineers to design and verify components of the radar digital subsystem for VERITAS.</li>
+            <li>Designed testbenches using CocoTB and Questa to simulate mission critical hardware alongside Python models.</li>
+            <li>Developed program to automatically check design physical constraints against PCB netlists.</li>
+            <li>Designed system for automated building and verification of FPGA designs for different target platforms.</li>
+            <li>Deployed a local LLM model and implemented RAG pipeline to search internal documentation.</li>
+          </ul>
+        </article>
+
+        <!-- Cornell AEP -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">AEP Department, Cornell University</h3>
+            <span class="entry-meta">Aug. 2024 – Dec. 2024 &bull; Ithaca, NY</span>
+          </div>
+          <div class="entry-role">Teaching Assistant &bull; Applied &amp; Engineering Physics</div>
+          <ul class="entry-bullets">
+            <li>Advising students on an interactive lab course including microfilm fabrication, AFM &amp; SEM use components.</li>
+            <li>Hosted office hours to help students with lab activities, problem sets, and general topics in nanoscience.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-label">Projects</h2>
+
+      <div class="entry-list">
+
+        <!-- FPGA Stereo Vision System -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">
+              <a href="https://d-gav.github.io/stereo_vision/" target="_blank" rel="noopener noreferrer">FPGA Stereo Vision System<span class="ext-arrow">&nearr;</span></a>
+            </h3>
+            <span class="entry-meta">FPGA &bull; Computer Vision</span>
+          </div>
+          <p class="entry-desc">
+            End-to-end, high performance (~200 FPS) Stereo Vision FPGA system, integrating analog camera and VGA peripherals, and host CPU software with hardware-accelerated image rectification, block matching, and smoothing.
+          </p>
+        </article>
+
+        <!-- Full-Custom Digital Neuron -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Full-Custom Digital Neuron</h3>
+            <span class="entry-meta">Custom Layout &bull; Cadence Virtuoso</span>
+          </div>
+          <p class="entry-desc">
+            Designed, laid out, and simulated a full-custom digital neuron, and simulated behavior as a classifier neural network.
+          </p>
+        </article>
+
+        <!-- Multicore Pipelined RISC Processor -->
+        <article class="entry">
+          <div class="entry-header">
+            <h3 class="entry-title">Multicore Pipelined RISC Processor</h3>
+            <span class="entry-meta">Computer Architecture &bull; SystemVerilog</span>
+          </div>
+          <p class="entry-desc">
+            Developed five stage multicore pipelined RISC processor in SystemVerilog with set associative caches, verified the design, and benchmarked its performance on different microbenchmarks.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-label">Education</h2>
+
+      <div class="edu-item">
+        <div class="entry-header">
+          <h3 class="entry-title">Cornell University, College of Engineering</h3>
+          <span class="entry-meta">Expected May 2027 &bull; Ithaca, NY</span>
+        </div>
+        <div class="entry-role">
+          Bachelor of Science &amp; Master of Engineering in Electrical &amp; Computer Engineering
+          &bull; GPA: 3.8 / 4.0
+        </div>
+        <div class="edu-courses">
+          <strong>Relevant Courses:</strong> VLSI, Microelectronics, Advanced Computer Arch., Computer Arch., Circuit Analysis, Nanoscience, FPGA Accel., Embedded Programming, Quantum Hardware, Hon. E&amp;M, Linear Algebra, Differential Equations
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-label">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-label">Languages &amp; HDLs</span>
+          <span class="skill-items">SystemVerilog, Verilog, Tcl, Python, C/C++, Java, MATLAB, ARM assembly</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">EDA &amp; Tools</span>
+          <span class="skill-items">Innovus, Virtuoso, VCS, CocoTB, Modelsim, Verilator, Vivado, Quartus, Linux, HFSS, Eagle, Inventor, OnShape</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Lab &amp; Equipment</span>
+          <span class="skill-items">DMM, VNA, AFM, SEM, Oscilloscopes</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Languages</span>
+          <span class="skill-items">English (native), Greek (conversational)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Demetrios Gavalas</span>
+      <span><a href="https://github.com/d-gav">github.com/d-gav</a></span>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
